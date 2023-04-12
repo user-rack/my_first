@@ -17,9 +17,9 @@ export function update()
     snakebody[0].X=(snakebody[0].X+31) %31;
     if(snakebody[0].Y==foodpos.X &&snakebody[0].X==foodpos.Y)
     {
-        updatefood()
-        expandsnake()
-        updatepoint()
+        updatefood();
+        expandsnake();
+        updatepoint();
     }
     for(let i=1;i<snakebody.length;i++)
     {
